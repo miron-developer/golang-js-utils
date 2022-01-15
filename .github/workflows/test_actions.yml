@@ -18,4 +18,4 @@ jobs:
       - name: Install dependescies
         run: go mod tidy
       - name: Test
-        run: make test
+        run: go test ./...
