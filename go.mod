@@ -1,3 +1,3 @@
-module github.com/miron-developer/go-js-utils
+module github.com/miron-developer/golang-js-utils
 
 go 1.17

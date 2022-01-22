@@ -80,7 +80,7 @@ func slice(a *Array, start, end int) []ArrayItem {
 
 // NewSlice return new slice between start & end
 // 	if start/end < 0, then count from end
-// 	if start/end = -0, then equal to array length
+// 	if start/end = LastElement, then equal to array length
 func (a *Array) NewSlice(start, end int) *Array {
 	items := slice(a, start, end)
 	return &Array{Items: items}
@@ -88,7 +88,7 @@ func (a *Array) NewSlice(start, end int) *Array {
 
 // Slice make current array to slice between start & end
 // 	if start/end < 0, then count from end
-// 	if start/end = -0, then equal to array length
+// 	if start/end = LastElement, then equal to array length
 func (a *Array) Slice(start, end int) *Array {
 	a.Items = slice(a, start, end)
 	return a
